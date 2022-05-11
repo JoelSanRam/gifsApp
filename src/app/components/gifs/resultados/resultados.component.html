@@ -1,1 +1,13 @@
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, reiciendis aut. Ipsam, eaque ratione, sapiente molestias blanditiis distinctio sit doloribus eligendi fugiat, hic qui quo neque quam quia a cumque?</p>
+
+<div class="row">
+    <div class="col-md-4 col-sm-6 animate__animated animate__fadeIn" *ngFor="let item of resultados">
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img-top" [src]="item.images.downsized_medium.url" [alt]="item.title">
+                <p class="card-text">
+                    {{ item.title }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
